@@ -1,39 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Wishlist</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="header">
-    <h1>My Wishlist</h1>
-    <p>Dear friends, here's a list of my wishes. Add new ones using the form below!</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mon précieux</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <main>
-    <section>
-      <h2>My Wishes</h2>
-      <ul id="wishlist" class="wishlist">
-        <!-- Initial wishes go here -->
-      </ul>
-    </section>
+  <body>
+    <header class="header">
+      <h1>Mon précieux</h1>
+      <p>
+        Je privilégie les trésors du marché de la seconde main, parce que,
+        soyons honnêtes, même Han Solo aurait préféré une bonne affaire chez un
+        ferrailleur galactique plutôt que du neuf à prix d’or.
+      </p>
+    </header>
 
-    <section class="add-wish">
-      <h2>Add a Wish</h2>
-      <form id="wishForm">
-        <input type="text" id="wishInput" placeholder="Enter your wish..." required>
-        <button type="submit">Add Wish</button>
-      </form>
-    </section>
-  </main>
+    <main>
+      <section>
+        <div class="wishlist">
+          <!-- First Wish -->
+          <div class="wishlist-item">
+            <img
+              src="https://www.editions-delcourt.fr/sites/default/files/styles/bandeau_s/public/2022-06/sillage-bandeau.jpg?h=bf654dbc&itok=95rk8H83"
+              alt="sillage-bd"
+            />
+            <div class="content">
+              <h3>Sillage Collection</h3>
+              <p class="description">
+                Nävis, une héroïne humaine au milieu des aliens, des
+                conspirations galactiques et des aventures épiques ! Chaque tome
+                est une pépite de science-fiction que je dois absolument avoir
+                pour explorer la galaxie depuis mon canapé. Mon étagère pleure
+                sans eux.
+              </p>
+              <div class="tags">
+                <span>BD</span>
+                <span>science-fiction</span>
+              </div>
+              <button class="accordion">Voir ma collection</button>
+              <div class="panel">
+                <ul class="wish-list">
+                  <li class="possess">Tome 1: À la recherche de Nävis</li>
+                  <li class="possess">Tome 2: Collection d'élite</li>
+                  <li class="possess">Tome 3: L'orbe noir</li>
+                  <li class="possess">Tome 4: Les Fleurs artificielles</li>
+                  <li class="possess">Tome 5: Naufrage sur Sillage</li>
+                  <li class="possess">Tome 6: Artifices</li>
+                  <li class="possess">Tome 7: QHIO/SDTH</li>
+                  <li class="possess">Tome 8: Nature humaine</li>
+                  <li class="possess">Tome 9: Infiltrations</li>
+                  <li class="possess">Tome 10: Retour de flammes</li>
+                  <li class="possess">Tome 11: Dérapages</li>
+                  <li class="possess">Tome 12: Zone de prospection</li>
+                  <li class="possess">Tome 13: Temps mort</li>
+                  <li class="possess">Tome 14: Liquidation totale</li>
+                  <li class="possess">Tome 15: Redéploiement</li>
+                  <li class="possess">Tome 16: Chasse gardée</li>
+                  <li class="possess">Tome 17: Grands froids</li>
+                  <li class="possess">Tome 18: Psycholocauste</li>
+                  <li>Tome 19: La Fille cachée</li>
+                  <li>Tome 20: Interventions</li>
+                  <li>Tome 21: Retour aux sources</li>
+                  <li>Tome 22: Machines de guerre</li>
+                  <li>Tome 23: Tensions extrêmes</li>
+                  <li>Tome 24: Résistances</li>
+                </ul>
+              </div>
+              <div class="meta">
+                <p class="price">de 3€ à 15.50€ /tome</p>
+                <p class="links">
+                  <a
+                    href="https://www.fnac.com/SearchResult/ResultList.aspx?Search=sillage&sft=1&sa=0"
+                    target="_blank"
+                    >Neuf</a
+                  >
+                  <a
+                    href="https://www.vinted.fr/catalog?search_text=sillage%20bd&time=1736350630"
+                    target="_blank"
+                    >Seconde main</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <footer class="footer">
-    <p>&copy; 2025 - Thank you for your kindness and support!</p>
-  </footer>
+          <!-- Second Wish -->
+          <div class="wishlist-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/2/24/Weekly_Sh%C5%8Dnen_Jump_No._51_%28Dec._1984%29_is_the_first_appearance_of_Goku._Cover_art_by_Akira_Toriyama.jpg"
+              alt="DBZ-manga"
+            />
+            <div class="content">
+              <h3>Dragon Ball Color Collection</h3>
+              <p class="description">
+                Les Dragon Balls comme jamais auparavant : en couleurs ! Goku,
+                ses transformations légendaires, des combats épiques, et des
+                méchants encore plus méchants... Cette édition colorisée est un
+                Kamehameha de nostalgie et d’excitation qui doit absolument
+                rejoindre ma collection.
+              </p>
+              <div class="tags">
+                <span>BD</span>
+                <span>science-fiction</span>
+              </div>
+              <button class="accordion">Show Volumes</button>
+              <div class="panel">
+                <ul class="wish-list">
+                  <li>Dragon Ball Full Color - L'enfance de Goku - Tome 1</li>
+                  <li>Dragon Ball Full Color - L'enfance de Goku - Tome 2</li>
+                  <li>Dragon Ball Full Color - L'enfance de Goku - Tome 3</li>
+                  <li>Dragon Ball Full Color - L'enfance de Goku - Tome 4</li>
+                  <li>Dragon Ball Full Color - L'enfance de Goku - Tome 5</li>
+                  <li>Dragon Ball Full Color - L'enfance de Goku - Tome 6</li>
+                  <li>Dragon Ball Full Color - L'enfance de Goku - Tome 7</li>
+                  <li>Dragon Ball Full Color - L'enfance de Goku - Tome 8</li>
+                  <li>Dragon Ball Full Color - Piccolo - Tome 1</li>
+                  <li>Dragon Ball Full Color - Piccolo - Tome 2</li>
+                  <li>Dragon Ball Full Color - Piccolo - Tome 3</li>
+                  <li>Dragon Ball Full Color - Piccolo - Tome 4</li>
+                  <li>Dragon Ball Full Color - Saga Saiyan - Tome 1</li>
+                  <li>Dragon Ball Full Color - Saga Saiyan - Tome 2</li>
+                  <li>Dragon Ball Full Color - Saga Saiyan - Tome 3</li>
+                  <li>Dragon Ball Full Color - Saga Freezer - Tome 1</li>
+                  <li>Dragon Ball Full Color - Saga Freezer - Tome 2</li>
+                  <li>Dragon Ball Full Color - Saga Freezer - Tome 3</li>
+                  <li>Dragon Ball Full Color - Saga Freezer - Tome 4</li>
+                  <li>Dragon Ball Full Color - Saga Freezer - Tome 5</li>
+                  <li>Dragon Ball Full Color - Saga Cyborgs - Tome 1</li>
+                  <li>Dragon Ball Full Color - Saga Cyborgs - Tome 2</li>
+                  <li>Dragon Ball Full Color - Saga Cyborgs - Tome 3</li>
+                  <li>Dragon Ball Full Color - Saga Cyborgs - Tome 4</li>
+                  <li>Dragon Ball Full Color - Saga Cyborgs - Tome 5</li>
+                  <li>Dragon Ball Full Color - Saga Cell - Tome 1</li>
+                  <li>Dragon Ball Full Color - Saga Cell - Tome 2</li>
+                  <li>Dragon Ball Full Color - Saga Cell - Tome 3</li>
+                  <li>Dragon Ball Full Color - Saga Cell - Tome 4</li>
+                  <li>Dragon Ball Full Color - Saga Cell - Tome 5</li>
+                  <li>Dragon Ball Full Color - Saga Cell - Tome 6</li>
+                  <li>Dragon Ball Full Color - Saga Majin Boo - Tome 1</li>
+                  <li>Dragon Ball Full Color - Saga Majin Boo - Tome 2</li>
+                  <li>Dragon Ball Full Color - Saga Majin Boo - Tome 3</li>
+                  <li>Dragon Ball Full Color - Saga Majin Boo - Tome 4</li>
+                  <li>Dragon Ball Full Color - Saga Majin Boo - Tome 5</li>
+                  <li>Dragon Ball Full Color - Saga Majin Boo - Tome 6</li>
+                  <li>Dragon Ball Full Color - Saga Majin Boo - Tome 7</li>
+                  <li>Dragon Ball Z - Tome 1</li>
+                  <li>Dragon Ball Z - Tome 2</li>
+                  <li>Dragon Ball Z - Tome 3</li>
+                  <li>Dragon Ball Z - Tome 4</li>
+                  <li>Dragon Ball Z - Tome 5</li>
+                  <li>Dragon Ball Z - Tome 6</li>
+                  <li>Dragon Ball Z - Tome 7</li>
+                  <li>Dragon Ball Z - Tome 8</li>
+                  <li>Dragon Ball Z - Tome 9</li>
+                  <li>Dragon Ball Z - Tome 10</li>
+                  <li>Dragon Ball Z - Tome 11</li>
+                  <li>Dragon Ball Z - Tome 12</li>
+                  <li>Dragon Ball Z - Tome 13</li>
+                  <li>Dragon Ball Z - Tome 14</li>
+                  <li>Dragon Ball Z - Tome 15</li>
+                  <li>Dragon Ball Z - Tome 16</li>
+                  <li>Dragon Ball Z - Tome 17</li>
+                  <li>Dragon Ball Z - Tome 18</li>
+                  <li>Dragon Ball Z - Tome 19</li>
+                  <li>Dragon Ball Z - Tome 20</li>
+                  <li>Dragon Ball Z - Tome 21</li>
+                  <li>Dragon Ball Z - Tome 22</li>
+                  <li>Dragon Ball Z - Tome 23</li>
+                  <li>Dragon Ball Z - Tome 24</li>
+                  <li>Dragon Ball Z - Tome 25</li>
+                  <li>Dragon Ball Z - Tome 26</li>
+                  <li>Dragon Ball Z - Tome 27</li>
+                  <li>Dragon Ball Z - Tome 28</li>
+                  <li>Dragon Ball Z - Tome 29</li>
+                  <li>Dragon Ball Z - Tome 30</li>
+                  <li>Dragon Ball Z - Tome 31</li>
+                  <li>Dragon Ball Z - Tome 32</li>
+                  <li>Dragon Ball Z - Tome 33</li>
+                  <li>Dragon Ball Z - Tome 34</li>
+                  <li>Dragon Ball Z - Tome 35</li>
+                  <li>Dragon Ball Z - Tome 36</li>
+                  <li>Dragon Ball Z - Tome 37</li>
+                  <li>Dragon Ball Z - Tome 38</li>
+                  <li>Dragon Ball Z - Tome 39</li>
+                </ul>
+              </div>
+              <div class="meta">
+                <p class="price">de 2€ à 15€ /tome</p>
+                <p class="links">
+                  <a
+                    href="https://www.fnac.com/SearchResult/ResultList.aspx?Search=dragon+ball+color&sft=1&sa=0"
+                    target="_blank"
+                    >Neuf</a
+                  >
+                  <a
+                    href="https://www.vinted.fr/catalog?search_text=dragon%20ball%20color%20manga&time=1736355602&page=1"
+                    target="_blank"
+                    >Seconde main</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <script src="script.js"></script>
-</body>
+          <!-- Third Wish -->
+          <div class="wishlist-item">
+            <img
+              src="https://carnetsdescience-larevue.fr/wp-content/uploads/2023/05/cs014-abonnements.jpg"
+              alt="Carnets de Science"
+            />
+            <div class="content">
+              <h3>Carnets de Science Collection</h3>
+              <p class="description">
+                Une revue fascinante où la science devient une aventure
+                passionnante ! Chaque numéro est une porte ouverte sur des
+                découvertes incroyables, des récits captivants et un univers où
+                curiosité et savoir se rencontrent.
+              </p>
+              <div class="tags">
+                <span>Revue</span>
+                <span>Science</span>
+                <span>Curiosité</span>
+              </div>
+              <button class="accordion">Show Volumes</button>
+              <div class="panel">
+                <ul class="wish-list">
+                  <li class="possess">
+                    Carnets de Science #1 - Automne/Hiver 2016
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #2 - Printemps/Été 2017
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #3 - Automne/Hiver 2017
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #4 - Printemps/Été 2018
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #5 - Automne/Hiver 2018
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #6 - Printemps/Été 2019
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #7 - Automne/Hiver 2019
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #8 - Printemps/Été 2020
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #9 - Automne/Hiver 2020
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #10 - Printemps/Été 2021
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #11 - Automne/Hiver 2021
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #12 - Printemps/Été 2022
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #13 - Automne/Hiver 2022
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #14 - Printemps/Été 2023
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #15 - Automne/Hiver 2023
+                  </li>
+                  <li class="possess">
+                    Carnets de Science #16 - Printemps/Été 2024
+                  </li>
+                  <li>Carnets de Science #17 - Automne/Hiver 2024</li>
+                </ul>
+              </div>
+              <div class="meta">
+                <p class="price">de 2€ à 15€ / numéro</p>
+                <p class="links">
+                  <a href="https://carnetsdescience-larevue.fr/" target="_blank"
+                    >Neuf</a
+                  >
+                  <a
+                    href="https://www.vinted.fr/catalog?search_text=carnets%20de%20science"
+                    target="_blank"
+                    >Seconde main</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth Wish -->
+          <div class="wishlist-item">
+            <img
+              src="https://contents.mediadecathlon.com/p1970560/k$b24907bb32380008a7b4a97ba967975a/sq/poutre-entrainement-escalade-spinchboard-solo-hybrid.jpg?format=auto&f=646x646"
+              alt="Spinchboard Solo Hybrid"
+            />
+            <div class="content">
+              <h3>Spinchboard Solo Hybrid</h3>
+              <p class="description">
+                Transformez votre salon en temple Jedi : développez votre force,
+                votre endurance et votre maîtrise avec cette poutre
+                d’entraînement. Parfait pour escalader des parois rocheuses… ou
+                juste pour être prêt à suspendre un X-Wing avec la Force.
+              </p>
+              <div class="tags">
+                <span>Escalade</span>
+                <span>Entraînement</span>
+                <span>Force</span>
+              </div>
+              <div class="meta">
+                <p class="price">59,99€</p>
+                <p class="links">
+                  <a
+                    href="https://www.decathlon.fr/p/poutre-entrainement-escalade-spinchboard-solo-hybrid/_/R-p-X8659467?mc=8659467"
+                    target="_blank"
+                    >Acheter neuf</a
+                  >
+                  <a
+                    href="https://www.vinted.fr/catalog?search_text=spinchboard%20solo%20hybrid"
+                    target="_blank"
+                    >Acheter d'occasion</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fifth Wish -->
+          <div class="wishlist-item">
+            <img
+              src="https://contents.mediadecathlon.com/p1340274/k$90305075d44a7bb767775a6ed96aa0b9/sq/crashpad-descalade-bloc-bigblocker-14m-x11m-turquoise.jpg?format=auto&f=480x480"
+              alt="Crashpad d'escalade BigBlocker"
+            />
+            <div class="content">
+              <h3>BigBlocker Crashpad: Bouclier pour Jedi grimpeurs</h3>
+              <p class="description">
+                La Force ne suffit pas toujours : ce crashpad est là pour
+                amortir vos chutes héroïques. Parfait pour vos aventures de
+                bloc, que ce soit sur Tatooine ou dans une forêt mystique.
+              </p>
+              <div class="tags">
+                <span>Escalade</span>
+                <span>Outdoor</span>
+                <span>Protection</span>
+              </div>
+              <div class="meta">
+                <p class="price">189,99€</p>
+                <p class="links">
+                  <a
+                    href="https://www.decathlon.fr/p/crashpad-d-escalade-bloc-bigblocker-1-4m-x1-1m-turquoise/_/R-p-177674?mc=8495259&c=vert"
+                    target="_blank"
+                    >Neuf</a
+                  >
+                  <a
+                    href="https://www.vinted.fr/catalog?search_text=crashpad%20bigblocker"
+                    target="_blank"
+                    >Seconde main</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sixth Wish -->
+          <div class="wishlist-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/1183127083891830824/1326659754486923314/m4d4k0_enjoying_a_massage_3abdcd21-d4cb-4a20-9eb2-4ce52050c4b3.png?ex=67803bad&is=677eea2d&hm=286481159b9a4b062024f2326e178e32ea3befb6fcb038b479fe429dc71c6012&"
+              alt="Massage / Kiné du dos"
+            />
+            <div class="content">
+              <h3>Massage Kiné : Récupérer comme un Jedi après l'effort</h3>
+              <p class="description">
+                Pour détendre les muscles après une session d'escalade intense
+                ou une aventure galactique, ce massage est la clé. Demandez à
+                Bichette pour les meilleurs conseils !
+              </p>
+              <div class="tags">
+                <span>Santé</span>
+                <span>Bien-être</span>
+                <span>Récupération</span>
+              </div>
+              <div class="meta">
+                <p class="price">de 30 à 50€</p>
+                <p class="links">
+                  <a href="mailto:bichette@example.com" target="_blank"
+                    >Contactez Bichette</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seventh Wish -->
+          <div class="wishlist-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/1183127083891830824/1326656096139481168/m4d4k0_making_a_lotus_yoga_position_3b9c5af3-6289-4ac4-b89e-d03298f40c1f.png?ex=67803845&is=677ee6c5&hm=48ca9f1a8ab2854f90fd80dc38141e3bfffb61d090acd74308b19cc4e9dda1db&"
+              alt="Séance de Yoga Vinyasa/Ashtanga"
+            />
+            <div class="content">
+              <h3>Yoga Vinyasa : La Force tranquille</h3>
+              <p class="description">
+                Une séance parfaite pour aligner le corps et l'esprit après une
+                journée héroïque. Demandez à Bichette pour les meilleurs spots
+                et conseils !
+              </p>
+              <div class="tags">
+                <span>Bien-être</span>
+                <span>Yoga</span>
+                <span>Relaxation</span>
+              </div>
+              <div class="meta">
+                <p class="price">Entre 20€ et 50€</p>
+                <p class="links">
+                  <a href="mailto:bichette@example.com" target="_blank"
+                    >Contactez Bichette</a
+                  >
+                  <a href="https://www.gstatic.com" target="_blank"
+                    >Réserver chez gstatic.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eighth Wish -->
+          <div class="wishlist-item">
+            <img
+              src="https://m.media-amazon.com/images/I/71AjEi6BGDL._AC_SX679_.jpg"
+              alt="Ducky Vintage Keycap Set"
+            />
+            <div class="content">
+              <h3>Ducky Vintage Keycap Set: Rétro mais tellement futuriste</h3>
+              <p class="description">
+                Offrez un look vintage à votre clavier avec ce set de keycaps
+                signé Ducky. Parfait pour transformer votre setup en œuvre d'art
+                rétro-futuriste, que vous soyez en train de coder ou de sauver
+                la galaxie.
+              </p>
+              <div class="tags">
+                <span>Clavier</span>
+                <span>Keycaps</span>
+                <span>Vintage</span>
+              </div>
+              <div class="meta">
+                <p class="price">89,98€</p>
+                <p class="links">
+                  <a
+                    href="https://www.amazon.fr/dp/B0XXXXX"
+                    <!--
+                    Remplace
+                    avec
+                    le
+                    lien
+                    exact
+                    --
+                  >
+                    target="_blank" >Acheter neuf</a
+                  >
+                  <a
+                    href="https://www.vinted.fr/catalog?search_text=Ducky%20Vintage%20Keycap%20Set"
+                    target="_blank"
+                    >Acheter d'occasion</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nineth Wish -->
+          <div class="wishlist-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/1183127083891830824/1326656750698369186/m4d4k0_as_a_climber_859ffde0-34fb-4183-80fb-98b0da8ec28a.png?ex=678038e1&is=677ee761&hm=e94b89f769ccc5687ed9ee936f8ed1bb682888ff894425ffdc78b98ac2df26ea&"
+              alt="Tarjetas Regalo - SpaceBlock Climbing Málaga"
+            />
+            <div class="content">
+              <h3>SpaceBlock Climbing : Escalade intergalactique</h3>
+              <p class="description">
+                Offrez ou vivez une expérience d'escalade unique à SpaceBlock
+                Málaga : sport, santé, et fun garantis. Parfait pour grimper
+                aussi haut que les sommets galactiques !
+              </p>
+              <div class="tags">
+                <span>Escalade</span>
+                <span>Aventure</span>
+                <span>Sport</span>
+              </div>
+              <div class="meta">
+                <p class="price">de 20€ à 200€</p>
+                <p class="links">
+                  <a href="https://spaceblockclimbing.com" target="_blank"
+                    >Réserver chez SpaceBlock</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 - Thank you for your kindness and support!</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
