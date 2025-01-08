@@ -1,36 +1,22 @@
-// Select elements
-const wishlist = document.getElementById("wishlist");
-const wishForm = document.getElementById("wishForm");
-const wishInput = document.getElementById("wishInput");
+// Select all accordion buttons
+const accordions = document.querySelectorAll(".accordion");
 
-// Function to add a new wish
-function addWish(event) {
-  event.preventDefault(); // Prevent form submission
-  
-  // Get the user's input
-  const newWish = wishInput.value.trim();
-  
-  if (newWish.length > 0) {
-    // Create a new list item
-    const listItem = document.createElement("li");
-    listItem.textContent = newWish;
-    
-    // Add a delete button
-    const deleteButton = document.createElement("button");
-    deleteButton.textContent = "❌";
-    deleteButton.style.marginLeft = "10px";
-    deleteButton.style.cursor = "pointer";
-    deleteButton.addEventListener("click", () => {
-      wishlist.removeChild(listItem);
-    });
+// Loop through each accordion and add a click event listener
+accordions.forEach((accordion) => {
+  accordion.addEventListener("click", function () {
+    // Toggle the active class on the button
+    this.classList.toggle("active");
 
-    listItem.appendChild(deleteButton);
-    wishlist.appendChild(listItem);
-  }
+    // Get the panel associated with this accordion
+    const panel = this.nextElementSibling;
 
-  // Clear the input field
-  wishInput.value = "";
-}
-
-// Attach event listener to the form
-wishForm.addEventListener("submit", addWish);
+    // Toggle the visibility of the panel
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      this.textContent = "Voir ma collection"; // Update button text
+    } else {
+      panel.style.display = "block";
+      this.textContent = "Cacher"; // Update button text
+    }
+  });
+});
